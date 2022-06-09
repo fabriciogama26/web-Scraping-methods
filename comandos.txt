@@ -1,0 +1,16 @@
+Structure of Scraping Functions
+
+The structure of the requests-HTML parsing call goes like this:
+
+variable.attribute.function(*selector*, parameters)
+
+The variable is the instance that you created using the .get(url) function.
+
+The attribute is the type of content that you want to extract (html / lxml).
+
+The requests-HTML parser also has many useful built-in methods for SEOs.
+
+    links: Get all links found on a page (anchors included);
+    absolute_links: Get all links found on a page (anchors excluded);
+    find(): Find a specific element on a page with a CSS Selector;
+    xpath(): Get elements using Xpath function;
